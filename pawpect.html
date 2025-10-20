@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAWPECT MATCH</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f7f6f1; margin: 0; color: #333; }
+        header { background: #84b6f4; color: #fff; padding: 30px 10px 15px 10px; text-align: center; }
+        nav { background: #4e4e4e; color: #fff; display: flex; justify-content: center; gap: 25px; padding: 10px 0; }
+        nav a { color: #fff; text-decoration: none; font-weight: bold; }
+        nav a:hover { color: #f7f6f1; text-decoration: underline; }
+        section { padding: 30px 12vw 20px 12vw; }
+        h2 { color: #6497b1; }
+        .dogs { display: flex; gap: 25px; flex-wrap: wrap; }
+        .dog-card { background: #fff; border-radius: 10px; padding: 15px; width: 230px; box-shadow: 0 2px 8px rgba(0,0,0,0.10); text-align: center; }
+        .dog-card img { width: 100%; height: 180px; object-fit: cover; border-radius: 5px; }
+        .contact, .donate { background: #fefefe; padding: 20px; border-radius: 8px; max-width: 420px; margin: 0 auto; }
+        footer { background: #27D114; color: #fff; text-align: center; padding: 10px 0; margin-top: 30px; font-size: 15px; }
+        @media (max-width: 700px) {
+            section { padding: 20px 3vw; }
+            .dogs { flex-direction: column; align-items: center; }
+        }
+ .top-right-square {
+      position: absolute;
+      top: 5px;         
+      right: 5px;       
+      width: 150px;      
+      height: 150px;     
+      overflow: hidden; 
+      border-radius: 0;  
+    }
+    .top-right-square img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      display: block;
+    }
+    body {
+      margin: 0;         
+      position: relative; 
+      min-height: 100vh;  
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PAWPECT MATCH</h1>
+        <p>A Home For Every Dog </p>
+    </header>
+    <nav>
+<a href="petsitting.html">Pet sitting</a>
+        <a href="#adopt">Adopt</a>
+        <a href="#services">Services</a>
+        <a href="#events">Events</a>
+        <a href="#donate">Donate</a>
+        <a href="#contact">Contact</a>
+    </nav>
+     <div class="top-right-square">
+    <img src="logo.jpg" alt="Square Image">
+  </div>
+
+    <section id="adopt">
+        <h2>Meet Our Rescue Dogs</h2>
+        <div class="dogs">
+            <div class="dog-card">
+                <img src="gabru.jpg" alt="Dog Gabru">
+                <h3>GABRU</h3>
+                <p>3 yrs, STRAY DOG</p>
+                <p>Friendly, Playful, Loves Walks</p>
+            </div>
+            <div class="dog-card">
+                <img src="mouli.jpg" alt="Dog Mouli">
+                <h3>MOULI</h3>
+                <p>6 yrs, GERMAN SHEPHERD </p>
+                <p>Curious, Gentle, Alert</p>
+            </div>
+            <div class="dog-card">
+                <img src="hot dog.jpg" alt="Dog Bhola">
+                <h3>HOT DOG</h3>
+                <p>4 yrs, STRAY DOG</p>
+                <p>Loyal, Energetic, Good with Kids</p>
+            </div>
+<div class="dog-card">
+                <img src="biddu.jpg" alt="Dog Biddu">
+                <h3>BHIDDU</h3>
+                <p>3 yrs, STRAY DOG</p>
+                <p>Loyal, Gental, Mischievous</p>
+            </div>
+
+        </div>
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Dog rescue & rehabilitation</li>
+            <li>Adoption counseling</li>
+            <li>Foster care programs</li>
+            <li>Grooming & health check-ups</li>
+            <li>Training classes</li>
+        </ul>
+    </section>
+    
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li><strong>Adoption Day:</strong> Every Saturday (11am - 5pm)</li>
+            <li><strong>Community Dog Walk:</strong> 1st Sunday of the month, 9am(1 hr session)</li>
+            <li><strong>Fundraising Gala:</strong> September 15, 2025</li>
+        </ul>
+    </section>
+    
+    <section id="donate" class="donate">
+        <h2>Donate & Support</h2>
+        <p>Your support helps us provide food, medical care, and love to our dogs. Thank you!</p>
+        <button style="background:#27D114;padding:10px 22px;border:none;border-radius:4px;font-size:18px;cursor:pointer;"><a href="donate.html">Donate Now </a></button>
+        <p><small><h4>(Be the person your dog thinks you are...)<h4></small></p>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Email:</strong> xyz@happytailshelter.org</p>
+        <p><strong>Phone:</strong> +91-799-5553-044</p>
+        <p><strong>Address:</strong> Lalpur, Ranchi, Jharkhand</p>
+        <p><strong>Hours:</strong> Mon-Sat (9am-6pm)</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Happy Tails Dog Care Shelter | Follow us on Instagram & Facebook
+    </footer>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<! File:website.html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate</title>
+  <style>
+header { background: #84b6f4; color: #fff; padding: 5px 2px 5px 2px; text-align: center; }
+footer { background: #27D114; color: #fff; text-align: center; padding: 10px 0; margin-top: 30px; font-size: 15px; }
+        @media (max-width: 700px) {
+            section { padding: 20px 3vw; }
+section {
+  transform: scale(0.8);   /* Adjust 0.8 → smaller, 1 = normal */
+  transform-origin: top center; /* Keeps it centered when scaled */
+}
+  </style>
+</head>
+<body>
+<header>
+        <h1>DONATE</h1>
+<p><small><h3>(Be the person your dog thinks you are...)<h3></small></p>
+<p> A Home For Every Dog </p>
+    </header>
+<section style="display: flex; align-items: center; justify-content: space-between; max-width: 900px; margin: 30px auto; padding: 20px; background: #ffffff; border-radius: 8px; box-shadow: 0 0 12px rgba(0,0,0,0.1);">
+    <div style="flex: 1; padding-right: 20px;">
+        <h2>Donated to Our Happy Tails Dog Care Shelter</h2>
+        <p>
+            Every contribution you make goes directly to our Happy Tails Dog Care Shelter, 
+            where we provide abandoned and stray dogs with a loving environment, 
+            proper medical treatment, healthy meals, and safe space until they find 
+            their forever homes. With your support, we continue to rescue and care 
+            for countless dogs in need.
+        </p>
+    </div>
+
+    <div style="flex: 1; text-align: right;">
+        <img src="saddog.jpg" alt="Happy Tails Dog Shelter" style="max-width: 100%; border-radius: 8px;" />
+    </div>
+</section> 
+<!-- Donation Form -->
+<section style="max-width: 420px; margin: 20px auto; padding: 20px; background: #f9f9f9; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+  
+  <!-- Header with logo and name -->
+  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+    <img src="logo.jpg" alt="Shelter Logo" style="height: 60px;">
+    <h2 style="margin: 0; color:#84b6f4;">PAWPECT</h2>
+  </div>
+
+  <!-- Donation Form -->
+  <form id="donationForm" style="display: flex; flex-direction: column; gap: 15px;">
+
+    
+    <input type="text" name="fullname" placeholder="Full Name" required
+           style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+    <input type="email" name="email" placeholder="Email Address" required
+           style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+    <input type="number" name="amount" placeholder="Donation Amount ($)" required
+           style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+    <textarea name="comment" placeholder="Your Comment (optional)" rows="4"
+              style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+
+    <button type="submit" style="padding: 12px; background: #FFB4B0; color: #fff; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+      Submit Donation
+    </button>
+
+
+    <!-- Success Tick -->
+    <div id="successTick" style="display:none; font-size: 25px; color: green; text-align: center; margin-top: 10px;">
+      ✔ Thank you for donating!
+    </div>
+  </form>
+</section>
+
+<script>
+  const form = document.getElementById("donationForm");
+  const successTick = document.getElementById("successTick");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // prevent refresh
+    successTick.style.display = "block";
+  });
+</script>    
+<footer>
+        &copy; 2025 Happy Tails Dog Care Shelter | Follow us on Instagram & Facebook
+    </footer>
+
+
+</body>
+</html>
